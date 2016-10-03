@@ -1,0 +1,50 @@
+.row {
+	text-align: center;
+}
+
+
+
+#treatYourself {
+	background-image: url(../assets/header-image.jpg);
+	background-repeat: no-repeat;
+	width: 100% !important;
+	height: 600px;
+	/*z-index: 0;*/
+	/*position: absolute;*/
+}
+
+.whiteWrapper {
+	background-color: white;
+	text-align: center;
+	/*position: relative;*/
+}
+
+#topSeller {
+	text-align: center;
+}
+
+#recipes {
+	text-align: center;
+}
+
+#franchise {
+	text-align: center;
+}
+
+#blog {
+	text-align: center;
+}
+
+#community {
+	text-align: center;
+}
+
+#newsletter {
+	background-image: url(../assets/newsletter-background.jpg);
+
+}
+
+#stockist {
+	background-image: url(../assets/stockist-background.jpg);
+	text-align: center;
+}

@@ -1,0 +1,47 @@
+.round-border-primary { 
+ @include border-radius(15px); 
+ padding: 10px 50px 10px 50px;
+ background-color: $primary_blue;
+}
+
+.border-primary {  
+	 padding: 5px;
+	 background-color: $primary_blue;
+	 color: white;
+	 float: right;
+	 bottom: 0px;
+	 position: absolute;
+}
+
+.round-transparent-white-border { 
+ @include border-radius(15px); 
+ padding: 10px 50px 10px 50px;
+ background-color: transparent;
+ border: 1px solid;
+ border-color: white;
+ color: white;
+}
+
+.round-transparent-white-border-input { 
+ @include border-radius(15px); 
+ padding: 10px;
+ margin: 0px 50px 20px 50px;
+ background-color: white;
+ border: 1px solid;
+ border-color: white;
+ color: white;
+}
+
+.round-transparent-blue-border { 
+ @include border-radius(15px); 
+ padding: 10px 50px 10px 50px;
+ background-color: transparent;
+ border: 1px solid;
+ border-color: $primary_blue;
+ color: $primary_blue;
+}
+
+product-button {
+	background-color: $primary_blue;
+	color: white;
+}

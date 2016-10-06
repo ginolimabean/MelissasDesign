@@ -5,38 +5,100 @@
 
 
 #topHeader {
+	margin-top: 10px;
 	font-family: pn_bold;
-
-		a {
-			color: black;
+		ul {
+			li {
+				a {
+			color: darkgrey;
 			font-size: 15px;
+			font-weight: bold;
 			padding: 5px;
+			display: inline-block;
+			}
+		}
+	}
+		
+
+		p {
+			display: inline-block;
+			font-weight: bold;
 		}
 
-		span {
+		img {
+			display: inline-block;
+		}
 
+		.icon-melshopping-basket{
+			font-size: 20px;
+			color: lightblue;
 		}
 
 }
 
 #midHeader {
 	margin-bottom: 15px;
-	span {
-		font-family: pn;
+	p {
+		font-family: melissa;
+		display: inline-block;
 	}
 	img {
+		display: inline-block;
+	}
 
+	.icon-melphone {
+		color: grey;
+		font-size: 30px;
 	}
 }
 
-.menu-centered {
+
+.title-bar {
+	background-color: $primary_blue;
+
+}
+
+
+.top-bar {
+	padding: 0px;
+	background-color: $primary_blue;
+	text-align: center;
+
 	ul {
+		background-color: $primary_blue;
 		li {
 			a {
+				background-color: $primary_blue;
 				font-family: pn_bold;
 				font-size: 15px;
+				color: white;
 			}
 		}
+	}
+}
+
+
+.greeting {
+	float: right;
+	font-size: 15px;
+
+	p {
+		padding-right: 10px;
+	}
+
+	img {
+		padding-right: 2px;
+	}
+}
+
+.delivery_contact {
+	text-align: center;
+	display: inline-block;
+	color: grey;
+
+	img {
+		margin-bottom: 30px;
+		margin-right: 10px;
 	}
 }
 
@@ -61,12 +123,7 @@
   overflow: hidden;
 }
 
-.menu-centered {
-	background-color: $primary_blue;
-	a{
-		color: white;
-	}
-}
+
 
 #treatYourself {
 	background-image: url(../assets/header-image.jpg);
@@ -84,6 +141,8 @@
 .whiteWrapper {
 	background-color: white;
 	text-align: center;
+	margin-top: 200px;
+	padding: 10px;
 
 	h1 {
 		font-family: pn_bold;
@@ -92,7 +151,7 @@
 	}
 
 	h2 {
-		font-family: pn_bold;
+		// font-family: pn_bold;
 		color: $primary_blue;
 	}
 
@@ -111,41 +170,209 @@
 	margin-bottom: 50px;
 
 	h4 {
+		font-size: 13px;
 		font-family: pn;
 		color: grey;
 		display: inline-block;
 	}
 
 	h1 {
-		font-family: pn;
+		// font-family: pna;
 		color: $primary_blue;
 	}
 
 	p {
-		font-family: pn;
-		color: grey;
-	}
-
-	span {
 		font-family: pn_bold;
+		color: grey;
+		display: inline-block;
+		margin-bottom: 5px;
 	}
 
 	a {
-		font-family: pn_bold;
+		font-family: pn;
 		color: white;
+	}
+
+	.product {
+	position: relative;
+	margin-bottom: 50px;
+	font-family: pn_bold;
+	display: inline-block;
+
+		.product_image {
+		position: relative;
+		margin-bottom: 10px;
+		display: inline-block;
+
+			a {
+				float: right;
+				display: inline-block;
+			}
+		}
+
+		.product_details {
+			p {
+				font-weight: bold;
+				text-align: left;
+			}
+		}
+	}
+
+
+
+	.view_all {
+
+		a {
+		font-family: pn;
+		color: $primary_blue;
+		}
 	}
 }
 
 
 
-.product {
-	// max-height: 289px;
+#hampers{
+	margin-bottom: 60px;
+
+	.row {
+		.row {
+			position: relative;
+		}
+	}
+
+	.adspace1 {
+	/*background-image: url(../assets/adspace1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	max-height: 454px;
 	position: relative;
 
-}
 
-#hampers{
-	margin-bottom: 20px;
+		h4 {
+		font-family: pn_bold;
+		color: white;
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		}
+	}
+
+
+	.adspace3 {
+		/*background-image: url(../assets/adspace2.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		position: relative;
+
+		h4 {
+
+			font-family: pn_bold;
+		}
+
+		p {
+			font-family: pn;
+		}
+
+		a {
+			font-family: pn_bold;
+		}
+
+		.row {
+			text-align: left;
+			// position: relative;
+		}
+
+		img {
+			// position: absolute;	
+			// display: inline-block;
+			float: left;
+			// position: relative;	
+		}
+		
+
+		.gift_container {
+			postion: absolute;
+			float: right;
+			
+
+			// @include breakpoint(medium only) {
+
+			// 	h4 {
+
+			// 	}
+
+			h4 {
+				color: $primary_blue;
+				font-family: pn_bold;
+				position: relative;
+			}
+
+			p {
+				font-family: pn;
+				position: relative;	
+				display: inline-block;
+			}
+
+			a {
+				font-family: pn_bold;
+				position: relative;
+			}
+
+			.icon-melcorporate-gifts{
+				display: inline-block;
+				color: lightblue;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.adspace2 {
+	/*	background-image: url(../assets/adspace3.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		// max-height: 668px;
+		position: relative;
+
+		h4 {
+			color: white;
+			font-family: pn_bold;
+			position: absolute;
+			right: 375px;
+			bottom: 450px;
+		}
+
+		p {
+			color: white;
+			font-family: pn;
+			position: absolute;
+			right: 400px;
+			bottom: 400px;
+		}
+	}
+
+	.adspace4 {
+	/*	background-image: url(../assets/adspace4.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;*/
+		max-height: 454px;
+		position: relative;
+
+		h4 {
+			color: white;
+			font-family: pn_bold;
+			position: absolute;
+			right: 400px;
+			bottom: 50px;
+		}
+
+		p {
+			color: white;
+			font-family: pn;
+			position: absolute;
+			right: 465px;
+			bottom: 0px;
+		}
+	}
 }
 
 #recipes {
@@ -153,38 +380,41 @@
 	margin-bottom: 75px;
 	
 	h1 {
-		font-family: pn;
+		// font-family: pna;
 		color: $primary_blue;
 	}
 
 	h4 {
+		font-size: 13px;
 		font-family: pn;
-		color: black;
-		display: inline-block;
-	}
-
-	p {
-		font-family: pn_bold;
-		color: grey;		
-	}
-}
-
-#recipes {
-	h1 {
-		font-family: pn_bold;
-	}
-
-	h4 {
-		font-family: pn_bold;
 		color: grey;
 		display: inline-block;
 	}
 
+
 	p {
-		font-family: pn; 
-		color: black;
+		font-family: pn_bold;
+		font-weight: bold;
+		color: grey;
+		margin-bottom: 5px;	
+	}
+
+	p:hover {
+		font-family: pn_bold;
+		font-weight: bold;
+		color: lightblue;	
+		margin-bottom: 5px;	
+	}
+
+	.view_all {
+
+		a {
+		font-family: pn;
+		color: $primary_blue;
+		}
 	}
 }
+
 
 #franchise {
 	text-align: center;
@@ -193,7 +423,7 @@
 	margin-bottom: 20px;
 
 	h1 {
-		font-family: pn_bold;
+		// font-family: pna;
 		padding-top: 50px;
 		padding-bottom: 50px;
 		color: white;
@@ -211,18 +441,37 @@
 	margin-bottom: 80px;
 
 	h4 {
+		font-size: 13px;
 		font-family: pn;
 		color: grey;
 		display: inline-block;
 	}
 
 	h1 {
-		font-family: pn;
+		// font-family: pna;
 		color: $primary_blue;
 	}
 
+	.row {
+		margin-bottom: 50px;
+	}
+
 	p {
+		font-family: pn_bold;
+		font-weight: bold;
+		color: black;
+	}
+
+	a {
+		margin-top: 50px;
+	}
+
+	.view_all {
+
+		a {
 		font-family: pn;
+		color: $primary_blue;
+		}
 	}
 }
 
@@ -230,6 +479,7 @@
 	text-align: center;
 
 	h4 {
+		font-size: 13px;
 		font-family: pn;
 		color: grey;
 		display: inline-block;
@@ -237,7 +487,7 @@
 	}
 
 	h1 {
-		font-family: pn_bold;
+		// font-family: pna;
 		color: $primary_blue;
 	}
 }
@@ -252,18 +502,18 @@
 	margin-bottom: -40px;
 }
 
-#carousel .row {
+#orbit .row {
 	padding-top: 25px;
 }
 
-#carousel .orbit-image {
+#orbit .orbit-image {
 /*	min-width: 115px;
 	min-height: 115px;*/
 	max-width: 115px;
 	max-height: 115px;
 }
 
-#carousel .orbit-caption {
+#orbit .orbit-caption {
 	background-color: #fff;
 	color: black;
 	padding: 5px;
@@ -278,8 +528,13 @@
 	margin-left: -15px;
 
 	h1 {
-		font-family: pn_bold;
+		// font-family: pna;
 		color: white;
+	}
+
+	input {
+		display: inline-block;
+		width: 350px;
 	}
 	
 	.large-6{
@@ -295,7 +550,7 @@
 	min-height: 400px;
 
 	h1 {
-		font-family: pn_bold;
+		// font-family: pna;
 		color: white;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -304,6 +559,11 @@
 	p {
 		font-family: pn;
 		color: white;
+	}
+
+	.button:hover {
+		color: white;
+		background-color: transparent;
 	}
 }
 
@@ -355,156 +615,95 @@
 
 
 
-.adspace1 {
-	/*background-image: url(../assets/adspace1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	max-height: 454px;
-	position: relative;
 
-	h4 {
-		font-family: pn_bold;
-		color: white;
-		position: absolute;
-		right: 10px;
-		bottom: 10px;
-	}
-	
-}
-
-.adspace3 {
-	/*background-image: url(../assets/adspace2.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	position: relative;
-
-	h4 {
-
-		font-family: pn_bold;
-	}
-
-	p {
-		font-family: pn;
-	}
-
-	a {
-		font-family: pn_bold;
-	}
-
-	.row {
-		text-align: left;
-		position: relative;
-	}
-
-	img {
-		position: absolute;		
-	}
-	
-
-	.container {
-		postion: relative;
-		float: right;
-
-		// @include breakpoint(medium only) {
-
-		// 	h4 {
-
-		// 	}
-
-		h4 {
-			color: $primary_blue;
-			font-family: pn_bold;
-			position: relative;
-		}
-
-		p {
-			font-family: pn;
-			position: relative;	
-		}
-
-		a {
-			font-family: pn_bold;
-			position: relative;
-		}
-
-		img {
-		}
-	}
-}
-
-.adspace2 {
-/*	background-image: url(../assets/adspace3.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	// max-height: 668px;
-	position: relative;
-
-	h4 {
-		color: white;
-		font-family: pn_bold;
-		position: absolute;
-		right: 375px;
-		bottom: 450px;
-	}
-
-	p {
-		color: white;
-		font-family: pn;
-		position: absolute;
-		right: 400px;
-		bottom: 400px;
-	}
-}
-
-.adspace4 {
-/*	background-image: url(../assets/adspace4.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;*/
-	max-height: 454px;
-	position: relative;
-
-	h4 {
-		color: white;
-		font-family: pn_bold;
-		position: absolute;
-		right: 400px;
-		bottom: 50px;
-	}
-
-	p {
-		color: white;
-		font-family: pn;
-		position: absolute;
-		right: 465px;
-		bottom: 0px;
-	}
-}
 
 
 footer {
 	margin-top: 20px;
 
-	.icons {
-		text-align: center;
+	img {
+		padding-right: 15px;
+		padding-bottom: 15px;
 		float: right;
-
-		img {
-			padding-right: 15px;
-		}
 	}
+
+	.row {
+		text-align: left;
+	}
+
+	.icon-melfacbook {
+		color: blue;
+		text-align: center;
+		font-size: 25px;
+		padding-right: 15px;
+	}
+
+	.icon-meltwitter {
+		color: turquoise;
+		text-align: center;
+		font-size: 25px;
+		padding-right: 15px;
+	}
+
+	.icon-melpinterest {
+		color: red;
+		text-align: center;
+		font-size: 25px;
+		padding-right: 15px;
+
+	}
+
+	.icon-instagram_1 {
+		color: blue;
+		text-align: center;
+		font-size: 25px;
+		padding-right: 15px;
+
+	}
+	
+	.icon-instagram_2 {
+		text-align: center;
+		font-size: 25px;
+		padding-right: 15px;
+
+	}
+
 
 	h3 {
 		font-family: pn_bold;
+		float: left;
+	}
 	
+	ul {
+		float: left;
+		li {
+			a {
+			font-family: pn;
+			color: grey;
+			}
+		}
 	}
 
-	p {
-		font-family: pn;
-		color: grey;
+	.icon-melphone {
+		color: blue;
+		padding-right: 25px;
+
 	}
 
-	img {
-		float: right;
+	.icon-melemail {
+		color: blue;
+		padding-right: 25px;
 	}
+
+	.icon-mellocator {
+		color: blue;
+		padding-right: 25px;
+	}
+
+	.icon-melfranchise {
+		color: blue;
+		padding-right: 25px;
+	}
+
 }
 

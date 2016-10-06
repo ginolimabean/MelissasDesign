@@ -1,3 +1,7 @@
+.round_border { 
+ @include border-radius(15px);
+}
+
 .round-border-primary { 
  @include border-radius(15px); 
  padding: 10px 50px 10px 50px;
@@ -30,6 +34,8 @@
  border: 1px solid;
  border-color: white;
  color: white;
+
+
 }
 
 .round-transparent-blue-border { 
@@ -39,6 +45,10 @@
  border: 1px solid;
  border-color: $primary_blue;
  color: $primary_blue;
+
+ 	a:hover, a:focus{
+ 		color: $primary_blue
+ 	}
 }
 
 product-button {

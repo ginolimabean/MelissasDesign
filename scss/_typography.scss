@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'pn';
+    font-family: 'pna';
     src: url('../assets/converted fonts/ProximaNovaA-Black.eot');
     src: url('../assets/converted fonts/ProximaNovaA-Black.eot?#iefix') format('embedded-opentype'),
          url('../assets/converted fonts/ProximaNovaA-Black.woff') format('woff'),
@@ -17,3 +17,115 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'pn';
+    src: url('../assets/converted fonts/ProximaNovaA-Regular.eot');
+    src: url('../assets/converted fonts/ProximaNovaA-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../assets/converted fonts/ProximaNovaA-Regular.woff') format('woff'),
+         url('../assets/converted fonts/ProximaNovaA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'melissa';
+    src: url('../assets/converted fonts/melissa.eot');
+    src: url('../assets/converted fonts/melissa.eot?#iefix') format('embedded-opentype'),
+         url('../assets/converted fonts/melissa.woff') format('woff'),
+         url('../assets/converted fonts/melissa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-mel"], [class*=" icon-mel"] {
+ /* use !important to prevent issues with browser extensions that change fonts */
+ font-family: 'melissa' !important;
+ speak: none;
+ font-style: normal;
+ font-weight: normal;
+ font-variant: normal;
+ text-transform: none;
+ line-height: 1;
+
+ /* Better Font Rendering =========== */
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-melcorporate-gifts {
+ &:before {
+   content: $icon-melcorporate-gifts;
+ }
+}
+.icon-melemail {
+ &:before {
+   content: $icon-melemail;
+ }
+}
+.icon-melfacebook {
+ &:before {
+   content: $icon-melfacebook;
+ }
+}
+.icon-melfranchise {
+ &:before {
+   content: $icon-melfranchise;
+ }
+}
+
+.icon-melinstagram_1 {
+ &:before {
+   content: $icon-melinstagram-path1;
+   color: rgb(0, 0, 0);
+ }
+}
+.icon-melinstagram_2 {
+ &:before {
+   content: $icon-melinstagram-path2;
+   margin-left: -1em;
+   color: rgb(255, 255, 255);
+ }
+}
+.icon-mellocator {
+ &:before {
+   content: $icon-mellocator;
+ }
+}
+.icon-melpackage {
+ &:before {
+   content: $icon-melpackage;
+ }
+}
+.icon-melphone {
+ &:before {
+   content: $icon-melphone;
+ }
+}
+.icon-melpinterest {
+ &:before {
+   content: $icon-melpinterest;
+ }
+}
+.icon-melsearch {
+ &:before {
+   content: $icon-melsearch;
+
+ }
+}
+.icon-melShape {
+ &:before {
+   content: $icon-melShape;
+ }
+}
+.icon-melshopping-basket {
+ &:before {
+   content: $icon-melshopping-basket;
+ }
+}
+.icon-meltwitter {
+ &:before {
+   content: $icon-meltwitter;
+ }
+}
+

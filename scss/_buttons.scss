@@ -24,6 +24,7 @@
  border: 1px solid;
  border-color: white;
  color: white;
+ font-family: pn_bold;
 }
 
 .round-transparent-white-border-input { 
@@ -51,7 +52,7 @@
  	}
 }
 
-product-button {
+.product-button {
 	background-color: $primary_blue;
 	color: white;
 }

@@ -10,7 +10,7 @@
 		ul {
 			li {
 				a {
-			color: darkgrey;
+			color: $dark_grey;
 			font-size: 15px;
 			font-weight: bold;
 			padding: 5px;
@@ -92,22 +92,27 @@
 }
 
 .delivery_contact {
+	font-family: pn_bold;
 	text-align: center;
 	display: inline-block;
-	color: grey;
+	color: $dark_grey;
 
 	img {
 		margin-bottom: 30px;
 		margin-right: 10px;
 	}
+
+	p {
+		margin-bottom: 0px;
+	}
 }
 
 .seperator {
-	width: 25px;
+	width: 1%;
 	height: 1px;
 	border-top: 1px solid grey;
 	display: inline-block;
-	margin-bottom: 4px;
+	margin-bottom: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
 }
@@ -141,17 +146,19 @@
 .whiteWrapper {
 	background-color: white;
 	text-align: center;
-	margin-top: 200px;
-	padding: 10px;
+	// margin: auto;
+	margin-top: 175px;
+	padding: 20px;
 
 	h1 {
-		font-family: pn_bold;
+		font-size: 40px;
+		font-family: pn;
 		color: grey;
 		display: inline-block;
 	}
 
 	h2 {
-		// font-family: pn_bold;
+		font-family: melissa;
 		color: $primary_blue;
 	}
 
@@ -160,6 +167,15 @@
 		font-family: pn;
 		color: grey;
 		display: inline-block;
+	}
+
+	a {
+		font-family: pn_bold;
+	}
+
+	a:hover {
+		font-family: pn_bold;
+		background-color: $primary_blue;
 	}
 	
 }
@@ -177,7 +193,7 @@
 	}
 
 	h1 {
-		// font-family: pna;
+		font-family: melissa;
 		color: $primary_blue;
 	}
 
@@ -205,9 +221,13 @@
 		display: inline-block;
 
 			a {
-				float: right;
+				
 				display: inline-block;
 			}
+		}
+
+		.product_button {
+			float: right;
 		}
 
 		.product_details {
@@ -223,7 +243,7 @@
 	.view_all {
 
 		a {
-		font-family: pn;
+		font-family: pn_bold;
 		color: $primary_blue;
 		}
 	}
@@ -236,20 +256,26 @@
 
 	.row {
 		.row {
-			position: relative;
+			// position: relative;
+			// padding: 0px;
 		}
 	}
 
 	.adspace1 {
-	/*background-image: url(../assets/adspace1.jpg);
+	background-image: url(../assets/adspace1.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;*/
+	background-size: cover;
 	max-height: 454px;
 	position: relative;
 
+		.adspace_caption {
+			float: right;
+
+		}
+
 
 		h4 {
-		font-family: pn_bold;
+		font-family: melissa;
 		color: white;
 		position: absolute;
 		right: 10px;
@@ -259,28 +285,38 @@
 
 
 	.adspace3 {
-		/*background-image: url(../assets/adspace2.jpg);
+		background-image: url(../assets/adspace3.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;*/
-		position: relative;
+		background-size: cover;
+		// position: relative;
+
+		.row {
+			text-align: left;
+			// position: relative;
+			margin: 0px;
+		}
+
+		.large-5 {
+			// min-height: 600px;
+			float: right;
+		}
 
 		h4 {
 
 			font-family: pn_bold;
+			color: $dark_grey;
 		}
 
 		p {
 			font-family: pn;
+			color: $dark_grey;
 		}
 
 		a {
 			font-family: pn_bold;
 		}
 
-		.row {
-			text-align: left;
-			// position: relative;
-		}
+		
 
 		img {
 			// position: absolute;	
@@ -291,8 +327,11 @@
 		
 
 		.gift_container {
-			postion: absolute;
+			// postion: absolute;
 			float: right;
+			min-height: 570px;
+			text-align: center;
+			padding-top: 150px;
 			
 
 			// @include breakpoint(medium only) {
@@ -301,9 +340,11 @@
 
 			// 	}
 
+		// }
+
 			h4 {
 				color: $primary_blue;
-				font-family: pn_bold;
+				font-family: melissa;
 				position: relative;
 			}
 
@@ -320,7 +361,7 @@
 
 			.icon-melcorporate-gifts{
 				display: inline-block;
-				color: lightblue;
+				color: turquoise;
 				margin-right: 5px;
 			}
 		}
@@ -343,7 +384,7 @@
 
 		p {
 			color: white;
-			font-family: pn;
+			font-family: melissa;
 			position: absolute;
 			right: 400px;
 			bottom: 400px;
@@ -367,7 +408,7 @@
 
 		p {
 			color: white;
-			font-family: pn;
+			font-family: melissa;
 			position: absolute;
 			right: 465px;
 			bottom: 0px;
@@ -378,9 +419,13 @@
 #recipes {
 	text-align: center;
 	margin-bottom: 75px;
+
+	.row {
+		margin-bottom: 50px;
+	}
 	
 	h1 {
-		// font-family: pna;
+		font-family: melissa;
 		color: $primary_blue;
 	}
 
@@ -396,7 +441,8 @@
 		font-family: pn_bold;
 		font-weight: bold;
 		color: grey;
-		margin-bottom: 5px;	
+		margin-bottom: 5px;
+		// text-overflow: ellipsis;
 	}
 
 	p:hover {
@@ -419,11 +465,12 @@
 #franchise {
 	text-align: center;
 	background-image: url(../assets/franchise-background.jpg);
+	background-repeat: no-repeat;
 	padding-bottom: 100px;
 	margin-bottom: 20px;
 
 	h1 {
-		// font-family: pna;
+		font-family: melissa;
 		padding-top: 50px;
 		padding-bottom: 50px;
 		color: white;
@@ -433,6 +480,11 @@
 		font-family: pn_bold;
 		padding-bottom: 50px;
 		color: white;
+	}
+
+	a {
+		color: white;
+	    background-color: transparent;
 	}
 }
 
@@ -448,7 +500,7 @@
 	}
 
 	h1 {
-		// font-family: pna;
+		font-family: melissa;
 		color: $primary_blue;
 	}
 
@@ -477,6 +529,7 @@
 
 #community {
 	text-align: center;
+	// margin-bottom: 50px;
 
 	h4 {
 		font-size: 13px;
@@ -487,7 +540,7 @@
 	}
 
 	h1 {
-		// font-family: pna;
+		font-family: melissa;
 		color: $primary_blue;
 	}
 }
@@ -502,55 +555,108 @@
 	margin-bottom: -40px;
 }
 
-#orbit .row {
-	padding-top: 25px;
-}
+#orbit {
+	// margin-top: 50px;
+	padding-top: 20px;
 
-#orbit .orbit-image {
-/*	min-width: 115px;
-	min-height: 115px;*/
-	max-width: 115px;
-	max-height: 115px;
-}
+		.row {
+		// padding-top: 25px;
+		}
 
-#orbit .orbit-caption {
-	background-color: #fff;
-	color: black;
-	padding: 5px;
-	text-align: left;
+		.orbit-image {
+		/*	min-width: 115px;
+			min-height: 115px;*/
+			max-width: 115px;
+			max-height: 115px;
+		}
+
+		 .orbit-caption {
+			font-family: pn_bold;
+			background-color: #fff;
+			color: $dark_grey;
+			padding: 0px;
+			text-align: left;
+		}
+
+		p {
+			font-family: pn;
+		}
+
 }
 
 
 #newsletter {
 	text-align: center;
-	background-image: url(../assets/newsletter-background.jpg);
-	min-height: 362px;
-	margin-left: -15px;
+	// background-image: url(../assets/newsletter-background.jpg);
+	// background-repeat: no-repeat;
+	// min-height: 362px;
+	// margin-left: -15px;
+	// position: relative;
+		.large-12 {
+			margin-left: -15px;
+			// padding-left: 0px;
+			// padding-right: -30px;
+			// padding: 0px -30px 0px 0px;
+		}
 
-	h1 {
-		// font-family: pna;
-		color: white;
-	}
 
-	input {
-		display: inline-block;
-		width: 350px;
-	}
-	
-	.large-6{
-		margin: 0px 20px 0px 20px;
-	}
+		.newsletter {
+			background-image: url(../assets/newsletter-background.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			
+		}
+
+
+
+		.newsletter_signup {
+			margin: auto;
+			text-align: center;
+			min-height: 363px;
+
+
+			a {
+				width: 200px;
+			}
+		}
+
+		h1 {
+			font-family: melissa;
+			color: white;
+		}
+
+		input {
+			display: inline-block;
+			width: 350px;
+		}
+		
+		a {
+			display: block;
+		}
+
+		@include breakpoint(medium only) {
+
+					h1 {
+						font-family: melissa;
+						color: white;
+						font-size: 30px;
+					}
+
+			}
 }
 
 
 #stockist {
 	background-image: url(../assets/stockist-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 	text-align: center;
 	padding-bottom: 75px;
-	min-height: 400px;
+	// min-height: 400px;
 
 	h1 {
-		// font-family: pna;
+		font-size: 45px;
+		font-family: melissa;
 		color: white;
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -625,6 +731,7 @@ footer {
 		padding-right: 15px;
 		padding-bottom: 15px;
 		float: right;
+		
 	}
 
 	.row {
@@ -670,16 +777,22 @@ footer {
 
 
 	h3 {
+		font-size: 20px;
 		font-family: pn_bold;
 		float: left;
+		padding-left: 15px;
 	}
 	
+	.menu {
+		border-left: 1px solid grey;
+	}
+
 	ul {
 		float: left;
 		li {
 			a {
 			font-family: pn;
-			color: grey;
+			color: $dark_grey;
 			}
 		}
 	}
@@ -703,6 +816,15 @@ footer {
 	.icon-melfranchise {
 		color: blue;
 		padding-right: 25px;
+	}
+
+	.copyright {
+			li {
+				p {
+					display: inline-block;
+					padding-right: 15px;
+				}
+			}
 	}
 
 }

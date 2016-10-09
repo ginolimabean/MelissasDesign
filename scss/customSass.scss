@@ -4,6 +4,10 @@
 @import 'buttons';
 
 
+.row {
+		text-align: center;
+	}
+
 #topHeader {
 	margin-top: 10px;
 	font-family: pn_bold;
@@ -32,6 +36,33 @@
 		.icon-melshopping-basket{
 			font-size: 20px;
 			color: lightblue;
+		}
+
+		@media #{$medium-only} { 
+			ul {
+				li {
+					a {
+					color: $dark_grey;
+					font-size: 11px;
+					font-weight: bold;
+					padding: 5px;
+					display: inline-block;
+					}
+				}
+			}
+
+			p {
+				display: inline-block;
+				font-weight: bold;
+				font-size: 11px;
+			}
+			
+			.icon-melshopping-basket{
+				font-size: 15px;
+				color: lightblue;
+				display: inline-block;
+			}
+
 		}
 
 }
@@ -136,19 +167,58 @@
 	// width: 100% !important;
 	height: 600px;
 	margin-bottom: 10px;
+
+	.whiteWrapper {
+		background-color: white;
+		text-align: center;
+		margin: auto;
+		margin-top: 175px;
+		padding: 20px;
+
+		// @include breakpoint(small){
+		// 	display: none;
+		// }
+
+		h1 {
+			font-size: 40px;
+			font-family: pn;
+			color: grey;
+			display: inline-block;
+		}
+
+		h2 {
+			font-family: melissa;
+			color: $primary_blue;
+		}
+
+
+		p {
+			font-family: pn;
+			color: grey;
+			display: inline-block;
+		}
+
+		a {
+			font-family: pn_bold;
+		}
+
+		a:hover {
+			font-family: pn_bold;
+			background-color: $primary_blue;
+		}
+	}
 }
 
-.row {
-	text-align: center;
-}
+#whiteWrapper_small {
+background-color: white;
+text-align: center;
+margin: auto;
+// margin-top: 175px;
+padding: 20px;
 
-
-.whiteWrapper {
-	background-color: white;
-	text-align: center;
-	// margin: auto;
-	margin-top: 175px;
-	padding: 20px;
+// @include breakpoint(medium-up){
+// 	display: none;
+// }
 
 	h1 {
 		font-size: 40px;
@@ -177,13 +247,15 @@
 		font-family: pn_bold;
 		background-color: $primary_blue;
 	}
-	
 }
+
+	
 
 #topSeller {
 	text-align: center;
 	// padding-bottom: 110px;
 	margin-bottom: 50px;
+	margin-top: 50px;
 
 	h4 {
 		font-size: 13px;
@@ -486,6 +558,12 @@
 		color: white;
 	    background-color: transparent;
 	}
+
+	@media #{$small-only} { 
+		text-align: center;
+		background-image: url(../assets_mobile/franchise-image-mobile.jpg);
+		background-repeat: no-repeat;
+	}
 }
 
 #blog {
@@ -531,6 +609,16 @@
 	text-align: center;
 	// margin-bottom: 50px;
 
+
+	.large-6 {
+		padding: 0px;
+	}
+
+	.large-3 {
+		padding: 0px;
+		margin-bottom: -40px;
+	}
+
 	h4 {
 		font-size: 13px;
 		font-family: pn;
@@ -543,24 +631,37 @@
 		font-family: melissa;
 		color: $primary_blue;
 	}
+
+	@media #{$small-only} { 
+		
+		.community2 {
+		background-image: url(../assets_mobile/community1_mobile.jpg);
+		background-repeat: no-repeat;
+		}
+
+		.community3 {
+			background-image: url(../assets_mobile/community2_mobile.jpg);
+			background-repeat: no-repeat;
+		}
+
+		.community4 {
+			background-image: url(../assets_mobile/community3_mobile.jpg);
+			background-repeat: no-repeat;
+		}
+	}
+
 }
 
 
-#community .large-6 {
-	padding: 0px;
-}
-
-#community .large-3 {
-	padding: 0px;
-	margin-bottom: -40px;
-}
 
 #orbit {
 	// margin-top: 50px;
-	padding-top: 20px;
+	// padding-top: 20px;
 
 		.row {
 		// padding-top: 25px;
+		padding-top: 25px;
+
 		}
 
 		.orbit-image {
@@ -569,6 +670,8 @@
 			max-width: 115px;
 			max-height: 115px;
 		}
+
+
 
 		 .orbit-caption {
 			font-family: pn_bold;
@@ -595,7 +698,7 @@
 		.large-12 {
 			margin-left: -15px;
 			// padding-left: 0px;
-			// padding-right: -30px;
+			padding-right: 0px;
 			// padding: 0px -30px 0px 0px;
 		}
 
@@ -604,7 +707,25 @@
 			background-image: url(../assets/newsletter-background.jpg);
 			background-repeat: no-repeat;
 			background-size: cover;
+			min-height: 363px;
 			
+		}
+
+		.newsletter_heading {
+			margin-top: 75px;
+		}
+
+		.newsletter_info {
+			display: inline-block;
+
+			.large-6 {
+				padding-right: 10px;
+
+			}
+
+			.medium-6 {
+				padding-right: 10px;
+			}
 		}
 
 
@@ -612,7 +733,7 @@
 		.newsletter_signup {
 			margin: auto;
 			text-align: center;
-			min-height: 363px;
+			// min-height: 363px;
 
 
 			a {
@@ -626,12 +747,15 @@
 		}
 
 		input {
+			margin: auto;
+			font-family: pn;
 			display: inline-block;
-			width: 350px;
+			width: 100%;
 		}
 		
 		a {
 			display: block;
+			margin: auto;
 		}
 
 		@include breakpoint(medium only) {
@@ -670,6 +794,12 @@
 	.button:hover {
 		color: white;
 		background-color: transparent;
+	}
+
+	@media #{$small-only} { 
+		text-align: center;
+		background-image: url(../assets_mobile/stockist-mobile.jpg);
+		background-repeat: no-repeat;
 	}
 }
 
@@ -819,6 +949,7 @@ footer {
 	}
 
 	.copyright {
+		border: none;
 			li {
 				p {
 					display: inline-block;

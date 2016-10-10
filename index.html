@@ -84,10 +84,41 @@
 <!-- MENU -->
 
     <section id=menuBar>
-        <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-            <button class="menu-icon" type="button" data-toggle></button>
-            <div class="title-bar-title">Contact</div>
+        <div class="small_menu hide-for-medium">
+            <div class="row">
+                <div class="small-6 columns">
+                    <a>Contact</a>
+                </div>
+                <div class="small-6 columns">
+                    <p>Hi, Jane Brown</p>
+                </div>
+            </div>
         </div>
+
+    <div class="small_menu_layout hide-for-medium">
+        <div class="row">
+            <div class="small-3 columns">
+                <img src="assets/logo-header.jpg" alt="logo-header.jpg">
+            </div>
+
+            <div class="small-3 columns">
+                <span class="icon-melsearch"></span>
+            </div>
+
+            <div class="small-3 columns">
+                <span class="icon-melshopping-basket"></span>
+            </div>
+
+            <div class="small-3 columns">
+                <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle></button>
+                <div class="title-bar-title"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
 
         <div class="top-bar" id="example-menu">
             <div class="top-bar menu-centered">
@@ -357,10 +388,16 @@
     <section id="franchise">
         <div class="row">
             <div class="large-12 medium-12 small-12">
-                <div class="franchise_detail">
-                    <h1>START YOUR OWN FRANCHISE</h1>
-                    <p>Are you interested in your own Melissa's franchise or have an idea for a new location? We'd love to hear from you.</p>
-                    <a href="" class="round-transparent-white-border">ENQUIRE NOW</a>
+                <div class="franchise">
+                    <div class="franchise_heading">
+                        <h1>START YOUR OWN FRANCHISE</h1>
+                    </div>
+                    <div class="franchise_detail show-for-medium">
+                        <p>Are you interested in your own Melissa's franchise or have an idea for a new location? We'd love to hear from you.</p>
+                    </div>
+                    <div class="franchise_button">
+                        <a href="" class="round-transparent-white-border">ENQUIRE NOW</a>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -465,6 +502,13 @@
                                             <img src="assets/newsletter-background.jpg" alt="newsletter-background.jpg">
                                         </div> -->
                                 <div class="newsletter_info">
+                                    <div class="newsletter_detail hide-for-medium">
+                                        <div class="row">
+                                            <div class="small-12 columns">
+                                                <p>Sign up to receive the latest news and get R100 off your first purchase. T&ampC's apply</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="row">
                                         <div class="large-6 medium-6 small-12 columns">
                                             <input class="round-transparent-white-border-input" type="text" placeholder="Your name">
@@ -540,12 +584,18 @@
 <!-- Stockist -->
     <section id="stockist">
         <div class="row">
-            <div class="large-8 large-offset-2 columns">
+            <div class="large-8 large-offset-2 small-8 small-offset-2 columns">
                 <div class="stockist">
-                    <h1>BECOME A MELISSA'S STOCKIST</h1>
-                    <p>Melissa's is actively seeking distributors, agents or retailers for our products no matter where in the world you may be</p>
-                    <p>If you are interested in stocking any of Melissa's Food, Homeware, or Hosptality range we would love to hear from you. Melissa's is particularly keen to speak to interested distributors, agents or retailers in Africa</p>
-                    <a href="" class="button round-transparent-white-border">FIND OUT MORE</a> 
+                    <div class="stockist_heading">
+                        <h1>BECOME A MELISSA'S STOCKIST</h1>
+                    </div>
+                    <div class="stockist_detail show-for-medium">
+                        <p>Melissa's is actively seeking distributors, agents or retailers for our products no matter where in the world you may be</p>
+                        <p>If you are interested in stocking any of Melissa's Food, Homeware, or Hosptality range we would love to hear from you. Melissa's is particularly keen to speak to interested distributors, agents or retailers in Africa</p>
+                    </div>
+                    <div class="stockist_button">
+                        <a href="" class="button round-transparent-white-border">FIND OUT MORE</a>
+                    </div>
                 </div>
             </div> 
         </div> 
@@ -557,14 +607,42 @@
     <!-- previously used flex box container flex-container and flex-item-->
         <div class="row">
             <div class="large-2 medium-12 small-12 columns">
-                <img src="assets/logo-footer.jpg" alt="melissa-footer.jpg"><br>
                 <div class="row">
-                    
-                        <span class="icon-melfacebook"></span>
-                        <span class="icon-meltwitter"></span>
-                        <span class="icon-melpinterest"></span>
-                        <span class="icon-melinstagram_1"></span><span class="icon-melinstagram_2"></span>
-                    
+                    <div class="large-12 medium-12 small-12 columns">
+                        <div class="footer_logo">
+                            <img src="assets/logo-footer.jpg" alt="melissa-footer.jpg"><br>
+                        </div>
+                    </div>
+                    <div class="large-12 medium-12 small-12 columns">
+                        <div class="footer_icons">
+                            <span class="icon-melfacebook"></span>
+                            <span class="icon-meltwitter"></span>
+                            <span class="icon-melpinterest"></span>
+                            <span class="icon-melinstagram_1"></span><span class="icon-melinstagram_2"></span>
+                        </div>
+                        <div class="footer_buttons hide-for-medium">
+                            <div class="footer_button">
+                                <div class="view_all">
+                                    <a href="" class="round-transparent-blue-border">+27 21 888 2999</a>
+                                </div>
+                            </div>
+                            <div class="footer_button">
+                                <div class="view_all">
+                                    <a href="" class="round-transparent-blue-border">info@melissa.co.za</a>
+                                </div>
+                            </div>
+                            <div class="footer_button">
+                                <div class="view_all">
+                                    <a href="" class="round-transparent-blue-border">STORE LOCATOR</a>
+                                </div>
+                            </div>
+                            <div class="footer_button">
+                                <div class="view_all">
+                                    <a href="" class="round-transparent-blue-border">FRANCHISE ENQUIRY</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="large-2 large-offset-2 medium-2 small-12 columns">
@@ -580,7 +658,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="large-2 medium-2 small-12 columns">
+            <div class="large-2 medium-2 small-6 columns">
                 
                 <ul class="menu">
                     <li>
@@ -592,7 +670,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="large-2 medium-2 small-12 columns">
+            <div class="large-2 medium-2 small-6 columns">
                 
                 <ul class="menu">
                     <li>

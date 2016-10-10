@@ -8,6 +8,42 @@
 		text-align: center;
 	}
 
+#menuBar {
+
+	.small_menu_layout {
+		font-family: pn_bold;
+		color: $primary_blue;
+		background-color: white;
+		font-size: 13px;
+		padding: 20px 0px 20px 10px;
+
+		.icon-melsearch {
+			font-size: 35px;
+			// font-weight: bold;
+			color: black;
+			// margin-top: 15px;
+		}
+
+		.icon-melshopping-basket {
+			font-size: 35px;
+			font-weight: bold;
+			color: black;
+			margin-top: 15px;
+		}
+
+		.title-bar {
+			background-color: white;
+			
+			.button {
+				.menu-icon {
+				color: $primary_blue;
+				}
+			}
+		}
+	}
+}
+
+
 #topHeader {
 	margin-top: 10px;
 	font-family: pn_bold;
@@ -54,7 +90,7 @@
 			p {
 				display: inline-block;
 				font-weight: bold;
-				font-size: 11px;
+				font-size: 10px;
 			}
 			
 			.icon-melshopping-basket{
@@ -79,15 +115,45 @@
 
 	.icon-melphone {
 		color: grey;
-		font-size: 30px;
+		font-size: 25px;
+	}
+
+	@media #{$medium-only} { 
+		p {
+			display: inline-block;
+			font-weight: bold;
+			font-size: 10px;
+		}
+
+		.icon-melphone {
+			font-size: 20px;
+		}
+
+		input {
+			width: 100px;
+			font-size: 10px;
+		}
+	}
+}
+
+.small_menu {
+	font-family: pn_bold;
+	color: white;
+	background-color: $primary_blue;
+	font-size: 13px;
+
+	a {
+		color: white;
+	}
+	a:hover {
+		color: white;
 	}
 }
 
 
-.title-bar {
-	background-color: $primary_blue;
 
-}
+
+
 
 
 .top-bar {
@@ -221,7 +287,7 @@ padding: 20px;
 // }
 
 	h1 {
-		font-size: 40px;
+		font-size: 30px;
 		font-family: pn;
 		color: grey;
 		display: inline-block;
@@ -321,6 +387,14 @@ padding: 20px;
 	}
 }
 
+.view_all {
+
+		a {
+		font-family: pn_bold;
+		color: $primary_blue;
+		}
+	}
+
 
 
 #hampers{
@@ -359,7 +433,7 @@ padding: 20px;
 	.adspace3 {
 		background-image: url(../assets/adspace3.jpg);
 		background-repeat: no-repeat;
-		background-size: cover;
+		// background-size: cover;
 		// position: relative;
 
 		.row {
@@ -538,6 +612,7 @@ padding: 20px;
 	text-align: center;
 	background-image: url(../assets/franchise-background.jpg);
 	background-repeat: no-repeat;
+	background-size: cover;
 	padding-bottom: 100px;
 	margin-bottom: 20px;
 
@@ -599,7 +674,7 @@ padding: 20px;
 	.view_all {
 
 		a {
-		font-family: pn;
+		font-family: pn_bold;
 		color: $primary_blue;
 		}
 	}
@@ -713,10 +788,19 @@ padding: 20px;
 
 		.newsletter_heading {
 			margin-top: 75px;
+			padding-left: 15px;
+
+			h1 {
+				font-size: 45px;
+			}
+				
 		}
 
 		.newsletter_info {
 			display: inline-block;
+			font-family: pn_bold;
+			color: white;
+			padding-left: 15px;
 
 			.large-6 {
 				padding-right: 10px;
@@ -734,6 +818,7 @@ padding: 20px;
 			margin: auto;
 			text-align: center;
 			// min-height: 363px;
+			padding-left: 20px;
 
 
 			a {
@@ -767,6 +852,22 @@ padding: 20px;
 					}
 
 			}
+
+		@media #{$small-only} { 
+			background-image: url(../assets_mobile/newsletter-background-mobile.jpg); 
+
+			input {
+			margin: auto;
+			font-family: pn;
+			display: inline-block;
+			width: 80%;
+		}
+
+		.small-12 {
+			padding-bottom: 20px;
+		}
+		
+	}
 }
 
 
@@ -857,6 +958,7 @@ padding: 20px;
 footer {
 	margin-top: 20px;
 
+
 	img {
 		padding-right: 15px;
 		padding-bottom: 15px;
@@ -866,6 +968,18 @@ footer {
 
 	.row {
 		text-align: left;
+	}
+	.footer_buttons {
+		margin: auto;
+	}
+
+	.footer_button {
+		margin: auto;
+		padding: 15px;
+		a {
+			margin-bottom: 50px;
+			font-size: 13px;
+		}
 	}
 
 	.icon-melfacbook {
